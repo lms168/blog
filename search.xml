@@ -3,6 +3,15 @@
   
     
     <entry>
+      <title></title>
+      <link href="/2018/09/14/ssh%E5%85%8D%E5%AF%86%E7%A0%81%E7%99%BB%E5%BD%95/"/>
+      <url>/2018/09/14/ssh%E5%85%8D%E5%AF%86%E7%A0%81%E7%99%BB%E5%BD%95/</url>
+      <content type="html"><![CDATA[]]></content>
+      
+      
+    </entry>
+    
+    <entry>
       <title>hexo的使用</title>
       <link href="/2018/09/07/hello-world/"/>
       <url>/2018/09/07/hello-world/</url>
@@ -20,24 +29,6 @@
             <tag> hexo </tag>
             
         </tags>
-      
-    </entry>
-    
-    <entry>
-      <title>第一篇文章测试</title>
-      <link href="/2018/09/07/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0%E6%B5%8B%E8%AF%95/"/>
-      <url>/2018/09/07/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0%E6%B5%8B%E8%AF%95/</url>
-      <content type="html"><![CDATA[]]></content>
-      
-      
-    </entry>
-    
-    <entry>
-      <title>test_site</title>
-      <link href="/2018/09/06/test-site/"/>
-      <url>/2018/09/06/test-site/</url>
-      <content type="html"><![CDATA[<p>技术站点<br>在线学习：Coursera、edX、Udacity、MIT公开课、MOOC学院<br>Hacker News：非常棒的针对编程的链接聚合网站<br>Techmeme：美国知名科技新闻和博客聚集网站，类似的还有（Panda, Hacker &amp; Designer News）<br>Programming reddit：同上<br>Java牛人必备：Program Creek<br>stackoverflow：IT技术问答网站<br>GitHub：全球最大的源代码管理平台，很多知名开源项目都在上面，如Linux内核，OpenStack等<br>LeetCode：来做做这些题吧，看看自己的算法水平如何？这可比什么面试宝典强多了。<br>Kaggle,Topcoder: 机器学习、大数据竞赛<br>掘金：高质量的技术社区<br>开发者头条<br>InfoQ：企业级应用，关注软件开发领域<br>V2EX: way to explore<br>国内老牌技术社区：OSChina、博客园、CSDN、51CTO<br>免费的it电子书：<a href="http://it-ebooks.info/" target="_blank" rel="noopener">http://it-ebooks.info/</a><br>在线学习：<a href="http://www.udemy.com/" target="_blank" rel="noopener">http://www.udemy.com/</a><br>优质学习资源：<a href="http://plus.mojiax.com/" target="_blank" rel="noopener">http://plus.mojiax.com/</a><br>代码练习：<a href="http://exercism.io/" target="_blank" rel="noopener">http://exercism.io/</a> and <a href="https://www.codingame.com" target="_blank" rel="noopener">https://www.codingame.com</a><br>DevStore:开发者服务商店<br>MSDN：微软相关的官方技术集中地，主要是文档类</p><p>作者：欧巴冰冰<br>链接：<a href="https://www.jianshu.com/p/d74934b49ba3#%E6%8A%80%E6%9C%AF%E7%AB%99%E7%82%B9" target="_blank" rel="noopener">https://www.jianshu.com/p/d74934b49ba3#%E6%8A%80%E6%9C%AF%E7%AB%99%E7%82%B9</a><br>來源：简书<br>简书著作权归作者所有，任何形式的转载都请联系作者获得授权并注明出处。</p>]]></content>
-      
       
     </entry>
     
