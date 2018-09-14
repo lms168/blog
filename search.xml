@@ -3,6 +3,27 @@
   
     
     <entry>
+      <title>ssh免密码登录</title>
+      <link href="/2018/09/14/ssh%E5%85%8D%E5%AF%86%E7%A0%81%E7%99%BB%E5%BD%95/"/>
+      <url>/2018/09/14/ssh%E5%85%8D%E5%AF%86%E7%A0%81%E7%99%BB%E5%BD%95/</url>
+      <content type="html"><![CDATA[<p>#1.目标</p><blockquote><p>实现<em>客户机A</em>免登录<em>服务器B</em></p></blockquote><p>#2.步骤</p><ol><li><p>在终端输入<code>ll ~/.ssh</code>如果存在id_rsa_x和id_rsa_x.pub则说明已经存在一对密钥/公钥</p></li><li><p>如果不存在密钥和公钥，则执行生成公钥和密钥的命令：<code>ssh-keygen -t rsa -f ~/.ssh/id_rsa_x -C &quot;密钥说明&quot;</code> ，多次回车（表示不设置密码）之后在<code>~/.ssh/</code>目录会多出 id_rsa_x 和 id_rsa_x.pub 两个文件</p></li><li><p>将id_rsa_x.pub中的内容追加到B机器的<code>.ssh/authorized_keys</code>机器中，如果不存在则手动创建</p><blockquote><p>一个客户端可以生成多个密钥/公钥对,<code>-f</code> 后面的参数值表示本次生成的密钥对文件的名字 </p></blockquote></li></ol><p>#3.原理<br>先来了解两个术语：对称加密和非对称加密<br>对称加密： 加密和解密都使用同一个密钥（效率高）<br>非对称加密： 公钥加密，私钥解密； 私钥加密，公钥解密（效率低）</p><p>免密码登录就是使用了非对称加密来达到免密码登录功能的，具体流程如下：</p><ol><li>A把公钥复制到B的服务器上面</li><li>A远程登录B服务器，此时B会把自己的公钥返回给A，并且让A确认是否信任该公钥</li><li>如果A信任B服务器，接着B服务器将会给该用户A发送一个挑战码，用户A将会用自己的私钥对挑战码进行一次加密，接着使用服务器B公钥对挑战码进行二次加密，然后将加密后的数据发送给服务器B；服务器B接收到用户A加密后的挑战码后先用自己的私钥进行一次解密再用之前保存在本机的用户A的公钥进行二次解密，如果得到的挑战码与自己发送的挑战码一致，则接受该用户免登陆认证A先使用</li></ol>]]></content>
+      
+      <categories>
+          
+          <category> 环境搭建 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> ssh </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
       <title>hexo的使用</title>
       <link href="/2018/09/14/hexo%E6%95%99%E7%A8%8B/"/>
       <url>/2018/09/14/hexo%E6%95%99%E7%A8%8B/</url>
@@ -20,15 +41,6 @@
             <tag> hexo </tag>
             
         </tags>
-      
-    </entry>
-    
-    <entry>
-      <title></title>
-      <link href="/2018/09/14/ssh%E5%85%8D%E5%AF%86%E7%A0%81%E7%99%BB%E5%BD%95/"/>
-      <url>/2018/09/14/ssh%E5%85%8D%E5%AF%86%E7%A0%81%E7%99%BB%E5%BD%95/</url>
-      <content type="html"><![CDATA[]]></content>
-      
       
     </entry>
     
