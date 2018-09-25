@@ -3,6 +3,27 @@
   
     
     <entry>
+      <title>nginx常用命令</title>
+      <link href="/2018/09/25/nginx%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
+      <url>/2018/09/25/nginx%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</url>
+      <content type="html"><![CDATA[<h1 id="nginx常用命令"><a href="#nginx常用命令" class="headerlink" title="nginx常用命令"></a>nginx常用命令</h1><h2 id="启动nginx服务"><a href="#启动nginx服务" class="headerlink" title="启动nginx服务"></a>启动nginx服务</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nginx -c /usr/<span class="built_in">local</span>/nginx/conf/nginx.conf</span><br></pre></td></tr></table></figure><h2 id="查看nginx运行状态"><a href="#查看nginx运行状态" class="headerlink" title="查看nginx运行状态"></a>查看nginx运行状态</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ps -ef|grep nginx</span><br><span class="line">输出如下结果说明nginx处于运行状态</span><br><span class="line">root     31064     1  0 15:59 ?        00:00:00 nginx: master process ./sbin/nginx -c ./conf/nginx.conf</span><br></pre></td></tr></table></figure><h2 id="检测nginx-conf是否正确"><a href="#检测nginx-conf是否正确" class="headerlink" title="检测nginx.conf是否正确"></a>检测nginx.conf是否正确</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nginx -t</span><br></pre></td></tr></table></figure><h2 id="重新加载修改后的nginx的配置文件"><a href="#重新加载修改后的nginx的配置文件" class="headerlink" title="重新加载修改后的nginx的配置文件"></a>重新加载修改后的nginx的配置文件</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nginx -s reload</span><br></pre></td></tr></table></figure><h2 id="nginx帮助文档"><a href="#nginx帮助文档" class="headerlink" title="nginx帮助文档"></a>nginx帮助文档</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nginx -h</span><br></pre></td></tr></table></figure>]]></content>
+      
+      <categories>
+          
+          <category> 开发 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> linux </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
       <title>linux常用的搜索替换命令</title>
       <link href="/2018/09/25/linux%E4%B8%8B%E5%B8%B8%E7%94%A8%E7%9A%84%E6%90%9C%E7%B4%A2%E6%9B%BF%E6%8D%A2%E5%91%BD%E4%BB%A4/"/>
       <url>/2018/09/25/linux%E4%B8%8B%E5%B8%B8%E7%94%A8%E7%9A%84%E6%90%9C%E7%B4%A2%E6%9B%BF%E6%8D%A2%E5%91%BD%E4%BB%A4/</url>
